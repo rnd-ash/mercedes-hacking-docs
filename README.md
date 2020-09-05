@@ -15,3 +15,11 @@ Chapter 5: Understanding Mercedes-Benz Signal Acquisition Modules (SAM)
 
 Chapter 6: Exploring the Engine Control Unit (ECU)
 
+Chapter 7: In Car Entertainment
+
+Chapter 8: Performance Tuning
+
+Chapter 9: Debugging and Fault Finding
+
+
+
