@@ -1,0 +1,1 @@
+Chapter 5: Understanding Mercedes-Benz Signal Acquisition Modules (SAM)
