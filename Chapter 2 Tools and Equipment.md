@@ -12,7 +12,7 @@ There has been an immense amount of research and development gone into low-cost 
 
 ### Macchina M2
 
-![](/Users/daniel/Documents/Code/Carhacking/mercedes-hacking-docs/images/macchinam2.jpg)
+![](images/macchinam2.jpg)
 
 The Macchina M2 is based on the Arduino Due and makes use of a SAM3X ARM Cortex-M3 processor processor, which gives it support for the following protocols:
 
@@ -24,7 +24,7 @@ The Macchina M2 is based on the Arduino Due and makes use of a SAM3X ARM Cortex-
 
 The choice of an ARM-Cortex-M3 also gives amazing options to add additional mods to the board, like Wireless/BLE and GSM
 
-![](/Users/daniel/Documents/Code/Carhacking/mercedes-hacking-docs/images/macchinam2board.png)
+![](images/macchinam2board.png)
 
 
 
@@ -32,7 +32,7 @@ The choice of an ARM-Cortex-M3 also gives amazing options to add additional mods
 
 Eric Evenchick of Linklayer Labs has been a car hacker for a long time and as such, is uniquely positioned to design and develop tools for budding car hackers. The CANtact Pro is a new addition to the tool lineup and incredibly powerful. 
 
-![](/Users/daniel/Documents/Code/Carhacking/mercedes-hacking-docs/images/cantactpro.jpg)
+![](images/cantactpro.jpg)
 
 It supports CAN and CAN-FD (Flexible Data) and is found on more modern vehicles. It has software support for Windows, macOS, and Linux 
 
