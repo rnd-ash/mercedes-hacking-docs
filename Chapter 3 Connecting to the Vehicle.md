@@ -4,11 +4,22 @@ This chapter is possibly the most important of all chapters. You need to be in t
 
 ## Hardware Needed
 
+In order to connect to the car in question, you'll need a number of parts, namely:
+
+- 6Pin OBD2 Splitter Extension Cable Male to Dual Female Y Cable
+- An interface to communicate with the car (via OBD-II or directly to the CANbus). 
+
+![](images/obdii_y_splitter.jpg)
+
+If possible, try and get the longest cable you can find, this makes it a lot easier to have loads of cables in the footwell of the car and not get all tangled up.
+
 ## Software Needed
+
+@ash to add what he uses, VS code, flashing the macchina etc. 
 
 ## Wake Up Command
 
-Many modules require constant power in order to keep configurations stored and accessible, but for the best part, most modules will go into a sleep mode when the car is turned off. In order to query these components, a unique wake-up packet is required.
+Many modules require constant power in order to keep configurations stored and accessible, but for the best part, most modules will go into a sleep mode when the car is turned off. In order to query these components, a unique wake-up packet is required. For Mercedes-Benz, this wake-up sequence is unique to the model, and although some do share the same, it does vary from model to model. 
 
 Depending on your model, you should have already performed reconnaisance on what networks are present. For example:
 
@@ -34,3 +45,31 @@ This protocol, also known as Keyword Protocol 2000 or KWP. One underlying physic
 When implemented on a K-line physical layer KWP2000 requires special *wakeup* sequences: *5-baud wakeup* and *fast-initialisation*. Both of these wakeup methods require timing critical manipulation of the K-line signal. (thanks Wikipedia!)
 
 The initialization consists of either a 25ms low followed by a 25ms high and 10.4kbps communication OR the 5 baud init which begins with a 200ms low, a 400ms high, a 400ms low, a 400ms high, a 400ms low and ends with a 200ms high.
+
+### Mercedes-Benz model codes
+
+As mentioned above, each model makes use of a unique wake-up code. There is no central repository that houses these codes, so we hope that we can crowdsource this table to all in the hope that we can create a single repository of all known codes. 
+
+
+
+| Mercedes-Benz model codes | Wake-up Packet |
+| ------------------------- | -------------- |
+| W203                      | 0xdeadbeef     |
+| C215                      |                |
+|                           |                |
+
+
+
+#### Manual Code Discovery
+
+If you do not have the unique code needed to wake the bus up, you can sniff for the sequence by plugging in a common diagnostics tool, such as any handheld reader or using the official Mercedes-Benz DAS Xentry software. This can be achieved by following these steps:
+
+*ASH TO ADD STEPS*
+
+#### Sending the Code
+
+In order to use the above code, you will need to send it to the ECU/SAMs in order to wake them up and receive messages back. 
+
+### Receiving your first CAN frame
+
+If you followed the above methodology, have the wake-up code, here is what you need to do. 
