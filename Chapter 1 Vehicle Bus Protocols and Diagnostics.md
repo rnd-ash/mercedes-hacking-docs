@@ -18,6 +18,12 @@ Before you sniff traffic, you need to know what you are looking at. Most likely,
 
 ![](images/candump.jpeg)
 
-Seems hectic right? Well actually not that hectic, if you understand how the frames Network
+Seems hectic right? Well actually not that hectic, if you understand how the frames are created. 
 
 ![](images/CANframes.jpeg)
+
+### Unified Diagnostic Services
+
+Unified Diagnostic Service (**UDS**) according to the ISO 14229 standard is a protocol used by diagnostic systems to communicate with ECUs in vehicles. The protocol is used to diagnose errors and reprogram ECUs. For example, it is possible to read and delete the fault memory of an ECU or to flash a new firmware on the ECU.
+
+It's important to note that Mercedes-Benz do not use standard UDS Arbitration IDs 0x7DF - 0x7E7. In order to use UDS, you should set the IDs lower, such as 0x300. 
