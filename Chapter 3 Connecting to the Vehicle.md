@@ -50,14 +50,19 @@ The initialization consists of either a 25ms low followed by a 25ms high and 10.
 
 As mentioned above, each model makes use of a unique wake-up code. There is no central repository that houses these codes, so we hope that we can crowdsource this table to all in the hope that we can create a single repository of all known codes.
 
-
 | Mercedes-Benz model codes | Wake-up Packet ID | Wake-Up Packet Content |
 | ------------------------- | ----------------- | ---------------------- |
-| W203                      | 0x001C            | 0x0210920000000000     |
-| W203                      | 0x001C            | 0x0210920000000000     |
-| W211                      | 0x001C            | 0x0210920000000000     |
-| W215                      | 0x001C            | 0x0210920000000000     |
-
+| W164 (M class)            | 0x04E4            | 0x0210920000000000     |
+| W169 (A class)            | 0x001C            | 0x0210920000000000     |
+| W203 (C class)            | 0x001C            | 0x0210920000000000     |
+| W209 (CLK class)          | 0x001C            | 0x0210920000000000     |
+| W211 (E class)            | 0x001C            | 0x0210920000000000     |
+| W215 (CL class)           | 0x001C            | 0x0210920000000000     |
+| W216 (CL class)           | 0x0692            | 0x0210920000000000     |
+| W221 (S class)            | 0x0692            | 0x0210920000000000     |
+| W240 (Maybach S class)    | 0x04E4            | 0x0210920000000000     |
+| W245 (B class)            | 0x001C            | 0x0210920000000000     |
+| W251 (R class)            | 0x04E4            | 0x0210920000000000     |
 
 
 #### Manual Code Discovery
