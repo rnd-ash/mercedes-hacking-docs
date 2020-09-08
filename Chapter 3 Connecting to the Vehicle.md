@@ -50,19 +50,21 @@ The initialization consists of either a 25ms low followed by a 25ms high and 10.
 
 As mentioned above, each model makes use of a unique wake-up code. There is no central repository that houses these codes, so we hope that we can crowdsource this table to all in the hope that we can create a single repository of all known codes.
 
-| Mercedes-Benz model codes | Wake-up Packet ID | Wake-Up Packet Content |
-| ------------------------- | ----------------- | ---------------------- |
-| W164 (M class)            | 0x04E4            | 0x0210920000000000     |
-| W169 (A class)            | 0x001C            | 0x0210920000000000     |
-| W203 (C class)            | 0x001C            | 0x0210920000000000     |
-| W209 (CLK class)          | 0x001C            | 0x0210920000000000     |
-| W211 (E class)            | 0x001C            | 0x0210920000000000     |
-| W215 (CL class)           | 0x001C            | 0x0210920000000000     |
-| W216 (CL class)           | 0x0692            | 0x0210920000000000     |
-| W221 (S class)            | 0x0692            | 0x0210920000000000     |
-| W240 (Maybach S class)    | 0x04E4            | 0x0210920000000000     |
-| W245 (B class)            | 0x001C            | 0x0210920000000000     |
-| W251 (R class)            | 0x04E4            | 0x0210920000000000     |
+Wake up packets below are all listed in **HEX**
+
+| Mercedes-Benz model codes |Wake-up Packet ID| DLC | Wake-Up Packet Content|
+| ------------------------- |:-:              | :-: |:-:                    |
+| W164 (M class)            | 04E4            | 8   |02 10 92 00 00 00 00 00|
+| W169 (A class)            | 001C            | 8   |02 10 92 00 00 00 00 00|
+| W203 (C class)            | 001C            | 8   |02 10 92 00 00 00 00 00|
+| W209 (CLK class)          | 001C            | 8   |02 10 92 00 00 00 00 00|
+| W211 (E class)            | 001C            | 8   |02 10 92 00 00 00 00 00|
+| W215 (CL class)           | 001C            | 8   |02 10 92 00 00 00 00 00|
+| W216 (CL class)           | 0692            | 8   |02 10 92 00 00 00 00 00|
+| W221 (S class)            | 0692            | 8   |02 10 92 00 00 00 00 00|
+| W240 (Maybach S class)    | 04E4            | 8   |02 10 92 00 00 00 00 00|
+| W245 (B class)            | 001C            | 8   |02 10 92 00 00 00 00 00|
+| W251 (R class)            | 04E4            | 8   |02 10 92 00 00 00 00 00|
 
 
 #### Manual Code Discovery
