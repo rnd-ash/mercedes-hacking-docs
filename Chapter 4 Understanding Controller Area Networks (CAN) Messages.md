@@ -56,3 +56,8 @@ When the receiver has sent the first frame, the receiver MUST send a Flow contro
 Once the sender receives the flow control frame, and is allowed to send, it begins sending the rest of the payload 7 bytes at a time (the first byte of each frame is an ID that starts at `0x21` and sequentially increases until it hits `0x29`, at which point it rolls back to `0x21`. After every frame is sent, the sender waits for the specified delay time set by the receiving ECU.
 
 If the sender hits the specified block size, it must wait for another flow control frame from the receiver before continuing sending the payload.
+
+In the above example, the full payload sent by `0x01A0` would be
+```
+[0x17, 0x03, 0x24, 0x02, 0x60, 0x01, 0x01, 0x00, 0x00, 0x00, 0x13, 0x00, 0x01, 0x00, 0x02, 0x00, 0x04, 0x00, 0x20, 0x20, 0x20, 0x20, 0x00, 0xF3]
+```
