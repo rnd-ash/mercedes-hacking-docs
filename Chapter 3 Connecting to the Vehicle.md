@@ -61,6 +61,7 @@ Wake up packets below are all listed in **HEX**
 | W211 (E class)            | 001C            | 8   |02 10 92 00 00 00 00 00|
 | W215 (CL class)           | 001C            | 8   |02 10 92 00 00 00 00 00|
 | W216 (CL class)           | 0692            | 8   |02 10 92 00 00 00 00 00|
+| W219 (CLS class)          | 001C            | 8   |02 10 92 00 00 00 00 00|
 | W221 (S class)            | 0692            | 8   |02 10 92 00 00 00 00 00|
 | W240 (Maybach S class)    | 04E4            | 8   |02 10 92 00 00 00 00 00|
 | W245 (B class)            | 001C            | 8   |02 10 92 00 00 00 00 00|
