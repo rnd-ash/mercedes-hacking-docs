@@ -28,7 +28,7 @@ Below is an example of a single frame payload
 ```
 ID: 0x01A4 DLC: 8 DATA: [0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x0A, 0x0A]
 ```
-In this style of packet, the first byte (shows the number of bytes that are in the payload itself, so for this packet, the actual data would be:
+In this style of packet, the first byte shows the number of bytes that are in the payload itself, so for this packet, the actual data would be:
 ```
 [0x00, 0x01]
 ```
