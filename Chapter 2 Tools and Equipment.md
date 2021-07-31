@@ -37,3 +37,5 @@ Eric Evenchick of Linklayer Labs has been a car hacker for a long time and as su
 It supports CAN and CAN-FD (Flexible Data) and is found on more modern vehicles. It has software support for Windows, macOS, and Linux 
 
 ## Software
+<br><br>
+[Next Chapter](Chapter%203%20Connecting%20to%20the%20Vehicle.md)

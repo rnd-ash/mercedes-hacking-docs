@@ -31,3 +31,5 @@ It's important to note that Mercedes-Benz do not use standard UDS Arbitration ID
 ### Mercedes-Benz Specifics
 
 The OBD-II port on all models are filtered (Either via the EIZ or SAM Module), they will allow reading of all can messages from all CAN networks within the car, however they **WILL ONLY** write diagnostic CAN ID's to write to the car's canbus networks, attempting to write a standard CAN ID to the cars network via the ODB-II Port will be rejected. They also require a wake-up code, which will be discussed in detail in Chapter 3. Unlike other models where you can simply plug into the CAN network and see a flurry of messages, this doesn't work like that with Mercedes-Benzs. 
+<br><br>
+[Next Chapter](Chapter%202%20Tools%20and%20Equipment.md)

@@ -157,3 +157,5 @@ object MRM_A3 {
 	""".trimMargin("|")
 }
 ```
+<br><br>
+[Next Chapter](Chapter%208%20Performance%20Tuning.md)

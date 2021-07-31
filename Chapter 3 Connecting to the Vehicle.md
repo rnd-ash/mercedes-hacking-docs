@@ -141,3 +141,5 @@ In order to use the above code, you will need to send it to the ECU/SAMs in orde
 ### Receiving your first CAN frame
 
 If you followed the above methodology, have the wake-up code, here is what you need to do.
+<br><br>
+[Next Chapter](Chapter%204%20Understanding%20Controller%20Area%20Networks%20(CAN)%20Messages.md)
