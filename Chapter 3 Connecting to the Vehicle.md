@@ -85,7 +85,7 @@ If you do not have the unique code needed to wake the bus up, you can sniff for 
 3. Upload the Arduino code to your M2 UTD Unit using the Arduino IDE
 4. From the driver repository, run `installer\install.bat`, this will install the necessary registry entries
 5. Copy the driver DLL to `C:\Program Files (x86)\macchina\passthru\driver.dll`
-6. When launching Xentry passthru, choose the M2 UTD Passthru:
+6. When launching Xentry passthru, choose the M2 UTD Passthru:<br>
 ![](images/selectdevice.png)
 
 ##### Capturing the wakeup packet
