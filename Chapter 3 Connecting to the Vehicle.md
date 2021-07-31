@@ -75,7 +75,7 @@ If you do not have the unique code needed to wake the bus up, you can sniff for 
 ##### Requirments
 * DAS/Xentry *Important: Must be passthru edition*
 * [Macchina M2 Under-the-dash](https://www.macchina.cc/catalog/m2-boards/m2-under-dash)
-* [M2UTD Passthru J2534 DLL](https://github.com/rnd-ash/m2-utd-passthru)
+* [M2UTD Passthru J2534 DLL](https://github.com/rnd-ash/m2-utd-passthru) - superseeded by [Macchina-J2534](https://github.com/rnd-ash/macchina-J2534)
 * Visual studio (Driver must be compiled at this time)
 * Windows WSL recommended for monitoring packet log files
 
