@@ -57,7 +57,7 @@ Once the sender receives the flow control frame, and is allowed to send, it begi
 
 If the sender hits the specified block size, it must wait for another flow control frame from the receiver before continuing sending the payload.
 
-In the above example, the full payload sent by `0x01A0` would be
+In the above example, the full payload sent by `0x01A4` would be
 ```
 [0x17, 0x03, 0x24, 0x02, 0x60, 0x01, 0x01, 0x00, 0x00, 0x00, 0x13, 0x00, 0x01, 0x00, 0x02, 0x00, 0x04, 0x00, 0x20, 0x20, 0x20, 0x20, 0x00, 0xF3]
 ```
