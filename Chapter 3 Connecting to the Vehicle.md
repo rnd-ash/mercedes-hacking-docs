@@ -75,7 +75,7 @@ If you do not have the unique code needed to wake the bus up, you can sniff for 
 ##### Requirments
 * DAS/Xentry *Important: Must be passthru edition*
 * [Macchina M2 Under-the-dash](https://www.macchina.cc/catalog/m2-boards/m2-under-dash)
-* [M2UTD Passthru J2534 DLL](https://github.com/rnd-ash/m2-utd-passthru)
+* [M2UTD Passthru J2534 DLL](https://github.com/rnd-ash/m2-utd-passthru) - superseeded by [Macchina-J2534](https://github.com/rnd-ash/macchina-J2534)
 * Visual studio (Driver must be compiled at this time)
 * Windows WSL recommended for monitoring packet log files
 
@@ -85,7 +85,7 @@ If you do not have the unique code needed to wake the bus up, you can sniff for 
 3. Upload the Arduino code to your M2 UTD Unit using the Arduino IDE
 4. From the driver repository, run `installer\install.bat`, this will install the necessary registry entries
 5. Copy the driver DLL to `C:\Program Files (x86)\macchina\passthru\driver.dll`
-6. When launching Xentry passthru, choose the M2 UTD Passthru:
+6. When launching Xentry passthru, choose the M2 UTD Passthru:<br>
 ![](images/selectdevice.png)
 
 ##### Capturing the wakeup packet
@@ -141,3 +141,5 @@ In order to use the above code, you will need to send it to the ECU/SAMs in orde
 ### Receiving your first CAN frame
 
 If you followed the above methodology, have the wake-up code, here is what you need to do.
+<br><br>
+[Next Chapter](Chapter%204%20Understanding%20Controller%20Area%20Networks%20(CAN)%20Messages.md)

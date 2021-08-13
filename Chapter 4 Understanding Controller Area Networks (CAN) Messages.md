@@ -1,39 +1,39 @@
-Chapter 4: Understanding Controller Area Networks (CAN) Messages
+# Chapter 4: Understanding Controller Area Networks (CAN) Messages
 
 Within Most Mercedes vehicles, there are 2 forms of CAN Messages
 1. Regular CAN Messages (Up to 8 byte payloads)
 2. ISO15765 messages (These are multi-frame payloads that can represent up to a 4096 byte payload).
 
 
-# Regular CAN Message
+## Regular CAN Message
 TBA
 
-# ISO15765 CAN Message
+## ISO15765 CAN Message
 
-## Observed uses in Mercedes
+### Observed uses in Mercedes
 1. Diagnostic messages between DAS/Xentry and ECUs
 2. Communication between Radio and Cluster
 3. Communication between GPS and Radio
 4. Communication between Telematics module and other ECUs in the car
 
 
-## How it works
+### How it works
 
 A ISO15765 message can have 2 forms. A single payload, or a multi-frame payload.
 
 **AN ISO15765 CAN FRAME IS ALWAYS 8 BYTES LONG! - REGARDLESS OF THE ACTUAL PAYLOAD SIZE
 
-### Single frame payload
+#### Single frame payload
 Below is an example of a single frame payload
 ```
 ID: 0x01A4 DLC: 8 DATA: [0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x0A, 0x0A]
 ```
-In this style of packet, the first byte (shows the number of bytes that are in the payload itself, so for this packet, the actual data would be:
+In this style of packet, the first byte shows the number of bytes that are in the payload itself, so for this packet, the actual data would be:
 ```
 [0x00, 0x01]
 ```
 
-### Multi-frame payload
+#### Multi-frame payload
 Below is an example of a trace of a multi-frame payload
 ```
 ID: 0x01A4, DLC: 8, DATA: [0x10, 0x17, 0x03, 0x24, 0x02, 0x60, 0x01, 0x01]
@@ -57,7 +57,9 @@ Once the sender receives the flow control frame, and is allowed to send, it begi
 
 If the sender hits the specified block size, it must wait for another flow control frame from the receiver before continuing sending the payload.
 
-In the above example, the full payload sent by `0x01A0` would be
+In the above example, the full payload sent by `0x01A4` would be
 ```
 [0x17, 0x03, 0x24, 0x02, 0x60, 0x01, 0x01, 0x00, 0x00, 0x00, 0x13, 0x00, 0x01, 0x00, 0x02, 0x00, 0x04, 0x00, 0x20, 0x20, 0x20, 0x20, 0x00, 0xF3]
 ```
+<br><br>
+[Next Chapter](Chapter%205%20Understanding%20Mercedes-Benz%20Signal%20Acquisition%20Modules%20(SAM).md)
